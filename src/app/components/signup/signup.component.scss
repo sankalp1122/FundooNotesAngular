@@ -1,0 +1,256 @@
+.body {
+    height: 100vh;
+    width: 100vw;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.mainCardContnr {
+    height: 520px;
+    // border: 1px solid red;
+    width: 710px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.lftInputMAinContnr {
+    height: 100%;
+    width: 60%;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    padding: 20px;
+}
+
+.rightBoxImgContnr {
+    width: 40%;
+    height: 100%;
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBoxndHderBox {
+    width: 100%;
+    height: 70px;
+    // border: 1px solid rgb(123, 123, 221);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgBoxOnly {
+    width: 100%;
+    height: 70%;
+    // border: 1px solid rgb(123, 123, 221);
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.hedrBox {
+    width: 100%;
+    height: 30%;
+    // border: 1px solid rgb(123, 123, 221);
+}
+
+.imgOnly {
+    height: 48px;
+    width: 90px;
+    position: relative;
+    right: 10px;
+    // top: 10px;
+}
+
+.hedingOnly {
+    font-weight: 500;
+}
+
+.InputMainBox {
+    width: 100%;
+    height: 60px;
+    // border: 1px solid rgb(123, 123, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 22px;
+
+}
+
+.inpuOnlyclas {
+    width: 49%;
+}
+
+.inpuPssclas {
+    width: 49%;
+
+}
+
+
+.userNameBox {
+    width: 100%;
+    height: 133px;
+    // border: 1px solid rgb(123, 123, 221);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.userNameInput {
+    width: 100%;
+}
+
+.txtboxHint {
+    // height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    // border: 1px solid blue;
+    // margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.txtboxsugston {
+    // border: 1px solid blue;
+    font-weight: 500;
+    color: #1a73e8;
+}
+
+.passwordBox {
+    width: 100%;
+    height: 95px;
+    // border: 1px solid rgb(123, 123, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.insidepasswordbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lastBtnsBox {
+    width: 100%;
+    height: 85px;
+    // border: 1px solid rgb(123, 123, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // margin-top: 22px;
+    position: relative;
+    top: 20px;
+
+}
+
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #1a73e8ed;
+    --mdc-protected-button-label-text-color: #fff;
+}
+
+.mat-mdc-button.mat-primary {
+    --mdc-text-button-label-text-color: #1a73e8ed;
+    position: relative;
+    right: 6px;
+}
+
+.imgClasBox {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+}
+
+.imgOnlyRgt {
+    height: 250px;
+    width: 240px;
+}
+
+.bttomtetxtimgbox {
+    width: 80%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.formclassonly {
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 720px) {
+    .mainCardContnr {
+        width: 65vw;
+        // height: 65vh;
+
+    }
+
+    .rightBoxImgContnr {
+        display: none;
+        width: 0px;
+    }
+
+
+
+    .lftInputMAinContnr {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .body{
+        height: 170vh;
+    }
+    .mainCardContnr {
+        height: 150vh;
+        // width: 520px;
+    }
+
+
+    .InputMainBox {
+        height: 140px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .inpuOnlyclas {
+        width: 100%;
+    }
+    .inpuPssclas {
+        width: 100%;
+    
+    }
+    
+
+.insidepasswordbox{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.passwordBox{
+    height: 200px;
+    width: 100%;
+    // border: 1px solid red;
+}
+}

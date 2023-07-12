@@ -1,0 +1,27 @@
+<div class="maincontainer">
+<mat-card class="matcarddumy" *ngFor="let note of datanotearr" >
+    <mat-card-content class="matcardinside2">
+        <div class="firsttitleBox">
+            <!-- <input type="text" class="inputtitle txttitlespan" placeholder="Title"> -->
+            <span class="txttitlespan">{{note.title}}</span>
+            <mat-icon>get_app</mat-icon>
+        </div>
+        <div class="takenottextBox">
+            <!-- <input type="text" class="inputtitle txttitlespan" placeholder="Take a note...."> -->
+
+            <span class="textnotClasscnd"> Take a note....</span>
+        </div>
+        <div class="iconLastBox">
+            <div class="iconsBoxonlyHldr">
+                <mat-icon class="sizeicon">add_alert </mat-icon>
+                <mat-icon class="sizeicon">person_add</mat-icon>
+                <mat-icon class="sizeicon">palette</mat-icon>
+                <mat-icon class="sizeicon">add_photo_alternate</mat-icon>
+                <mat-icon class="sizeicon">archive</mat-icon>
+                <mat-icon class="sizeicon">more_vert</mat-icon>
+
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+</div>

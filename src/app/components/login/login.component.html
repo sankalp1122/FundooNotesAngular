@@ -1,0 +1,50 @@
+<div class="mainContainer">
+
+    <mat-card class="componentWrapper">
+        <div class="googlehedingall">
+            <img class="imgGoglOnly"
+                src="https://techcrunch.com/wp-content/uploads/2015/10/screen-shot-2015-10-08-at-4-20-16-pm.png" alt="">
+
+            <p class="ptagText"> Sign in</p>
+            <p class="UscontTxt"> Use Your Google Account</p>
+        </div>
+        <form [formGroup]="LoginData">
+        <div class="inputClsBox">
+            <mat-form-field appearance="outline" class="inputSizebox">
+                <mat-label>Email or mobile number</mat-label>
+                <input matInput formControlName="email">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <div class="forgtTxtbx">
+                Forgot email?
+            </div>
+
+        </div>
+
+        <div class="inputpassClsBox">
+            <mat-form-field appearance="outline" class="inputSizebox">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <div class="forgtTxtbx">
+                Forgot password?
+            </div>
+
+        </div>
+
+        <div class="lernMoreBox">
+            <span>Not your computer? Use Guest mode to sign in privately.</span>
+            <span class="txtlrnSpan">Learn more</span>
+        </div>
+
+        <div class="createBtnBox">
+            <button mat-button color="primary" style="block-size: 25px;">Create account</button>
+            <button mat-raised-button color="primary" style="block-size: 30px;" (click)="onSubmit()">Next</button>
+
+        </div>
+    </form>
+    </mat-card>
+
+
+</div>

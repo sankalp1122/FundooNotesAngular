@@ -1,0 +1,147 @@
+.noteinput1Box {
+  width: 600px;
+  margin-left: 327px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+  margin-top: 39px;
+}
+
+.matcardinside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-textbox {
+  width: 22%;
+  height: 100%;
+  // border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rghticonBox {
+  // border: 1px solid black;
+  height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pushpinclsicon {
+  object-fit: contain;
+  height: 21px;
+  width: 21px;
+  color: #202124;
+}
+
+.iconClor {
+  color: #202124;
+}
+.textnotClas {
+  letter-spacing: 0.01428571em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.25rem;
+  // padding: 4px 16px 12px 16px;
+  font-weight: 500;
+  color: #202124;
+}
+.noteinput2Box {
+  width: 600px;
+  margin-left: 327px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin-top: 39px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+.matcardinside2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.firsttitleBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  // border: 1px solid red;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.inputtitle {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+
+  letter-spacing: 0.00625em;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.takenottextBox {
+  width: 100%;
+  height: 50px;
+  // border: 1px solid red;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.iconLastBox {
+  width: 100%;
+  height: 50px;
+  // border: 1px solid red;
+  display: flex;
+}
+.txttitlespan {
+  font-size: 16px;
+  font-weight: 500;
+}
+.textnotClasscnd {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01428571em;
+}
+.iconsBoxonlyHldr {
+  width: 83%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding-left: 7px;
+}
+.sizeicon {
+  font-size: 17px;
+  // color: rgba(0    ,0,0,.2);
+}
+.closBtnBox {
+  width: 35%;
+  height: 100%;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btnTxtclas {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 2em;
+  :hover {
+    background-color: lightgray;
+  }
+}

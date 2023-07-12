@@ -1,0 +1,85 @@
+<div class="body">
+
+    <mat-card class="mainCardContnr">
+        <div class="lftInputMAinContnr">
+            <div class="imgBoxndHderBox">
+                <div class="imgBoxOnly">
+                    <img class="imgOnly"
+                        src="https://techcrunch.com/wp-content/uploads/2015/10/screen-shot-2015-10-08-at-4-20-16-pm.png"
+                        alt="">
+                </div>  
+                <div class="hedrBox">
+                    <h3 class="hedingOnly"> Create Your Google Account</h3>
+                </div>
+            </div>
+            <form [formGroup]="SignupData">
+                <div class="InputMainBox">
+                    <mat-form-field appearance="outline" class="inpuOnlyclas">
+                        <mat-label>First name</mat-label>
+                        <input matInput class="inpuOnlyclas" formControlName="firstName">
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="inpuOnlyclas">
+                        <mat-label>Last name</mat-label>
+                        <input matInput class="inpuOnlyclas" formControlName="lastName">
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                </div>
+
+                <div class="userNameBox">
+                    <mat-form-field appearance="outline" class="userNameInput">
+                        <mat-label>Username</mat-label>
+                        <input matInput class="inpuOnlyclas" formControlName="email">
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <div class="txtboxHint"> U can use letters number & periods</div>
+                    <div class="txtboxsugston"> Use my current email address instead</div>
+
+                </div>
+
+                <div class="passwordBox">
+                    <div class="insidepasswordbox">
+                        <mat-form-field appearance="outline" class="inpuPssclas">
+                            <mat-label>Password</mat-label>
+                            <input matInput class="inpuOnlyclas" formControlName="password">
+                            <!-- <mat-hint>Hint</mat-hint> -->
+                        </mat-form-field>
+
+
+                        <mat-form-field appearance="outline" class="inpuPssclas">
+                            <mat-label>Confirm</mat-label>
+                            <input matInput class="inpuOnlyclas" formControlName="confirmPassword">
+                            <!-- <mat-hint>Hint</mat-hint> -->
+                        </mat-form-field>
+
+                    </div>
+                    <div>
+                        <div class="txtboxHint"> Use 8 or more characters with a mix of letters , number <br>symbols
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lastBtnsBox">
+                    <button class="colrbtn" mat-button color="primary" style="block-size: 25px;">Sign in
+                        instead</button>
+                    <button class="colrbtn" mat-raised-button color="primary" style="block-size: 30px;" (click)="onSubmit()">Next</button>
+
+                </div>
+                </form>
+        </div>
+
+        <div class="rightBoxImgContnr">
+            <div class="imgClasBox">
+                <img class="imgOnlyRgt" src="../../../assets/goglecreateacount2.png" alt="">
+            </div>
+            <div class="bttomtetxtimgbox">
+                One Account all of Google <br> working for you.
+            </div>
+
+        </div>
+
+    </mat-card>
+
+</div>
