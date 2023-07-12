@@ -97,11 +97,11 @@
 }
 .emptyspace {
   width: 30%;
-//   border: 1px solid black;
+  // border: 1px solid black;
 }
 .center-part {
-  //   border: 1px solid black;
-  width: 40%;
+    // border: 1px solid black;
+  width: 47%;
   height: 70%;
   background: #f1f3f4;
   border-radius: 8px;
@@ -118,7 +118,7 @@
   margin-left: 10px;
 }
 .search-nav-field {
-  border: 1px solid black;
+  // border: 1px solid black;
   width: 85%;
   height: 100%;
   border: none;
@@ -131,8 +131,8 @@
 }
 
 .right-part {
-  //   border: 10px solid rgb(13, 63, 66);
-  width: 42%;
+    // border: 10px solid rgb(13, 63, 66);
+  width: 35%;
   display: flex;
   // margin-left: 5px;
   height: 100%;
@@ -171,7 +171,11 @@
   width: 305x;
   border-radius: 100px;
 }
-
+.iconDsboarclas{
+  object-fit: contain;
+  height: 22px;
+  width: 22px;
+}
 .cardsnotesDisplaybox{
   // border: 5px solid black;
   // // margin-left: 100px;
