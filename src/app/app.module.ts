@@ -24,7 +24,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NoteInputComponent } from './components/note-input/note-input.component';
 import { GetallnotesComponent } from './components/getallnotes/getallnotes.component';
 import { DisplaynotesComponent } from './components/displaynotes/displaynotes.component';
+import { DailogBoxComponent } from './components/dailog-box/dailog-box.component';
 // import {MatCardModule} from '@angular/material';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { DisplaynotesComponent } from './components/displaynotes/displaynotes.co
     NoteInputComponent,
     GetallnotesComponent,
     DisplaynotesComponent,
+    DailogBoxComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +59,7 @@ import { DisplaynotesComponent } from './components/displaynotes/displaynotes.co
     MatToolbarModule,
     FontAwesomeModule,
     // MatCardModule,
+    MatDialogModule,
 
   ],
   providers: [],

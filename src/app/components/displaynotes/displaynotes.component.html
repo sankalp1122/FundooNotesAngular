@@ -1,5 +1,5 @@
 <div class="maincontainer">
-<mat-card class="matcarddumy" *ngFor="let note of datanotearr" >
+<mat-card class="matcarddumy" *ngFor="let note of datanotearr"  (click)="openDialog(note)">
     <mat-card-content class="matcardinside2">
         <div class="firsttitleBox">
             <!-- <input type="text" class="inputtitle txttitlespan" placeholder="Title"> -->
