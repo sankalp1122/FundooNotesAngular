@@ -22,6 +22,8 @@ notesarr:any = [];
     this.noteService.getallnotes().subscribe((res:any) => {
       console.log(res);
       this.notesarr=res.data.data;
+      this.notesarr=this.notesarr.filter((notes:any)=>notes.isDeleted ==false)
     })
+
   }
 }

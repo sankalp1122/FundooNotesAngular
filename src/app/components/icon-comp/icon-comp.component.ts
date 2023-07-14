@@ -16,11 +16,16 @@ export class IconCompComponent {
   DeleteNote(){
 
     const reqstData = 
-    { noteId: this.noteData,
+    { noteIdList: [this.noteData],
       isDeleted: true,
      }
+     console.log(reqstData);
+     
     // console.log(this.noteData,"sankalp noteData id");
-    this.noteservice.deleteNote(reqstData)
+    this.noteservice.deleteNote(reqstData).subscribe((res:any)=>{
+      console.log(res);
+      
+    })
     
   }
 
