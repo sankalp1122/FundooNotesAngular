@@ -34,7 +34,7 @@ export class NoteserviceService {
     return this.httpService.postService('notes/addNotes',reqstData,true,httpHeadersOptions);
 }
 
-  deleteNote(id: any){
+  deleteNote(reqstData: any){
     this.token=localStorage.getItem('token');
     let httpHeadersOptions= {
       headers: new HttpHeaders ({ 
@@ -42,7 +42,7 @@ export class NoteserviceService {
         authorization: this.token
       })
     }
-  return this.httpService.postService('notes/trashNotes',id,true,httpHeadersOptions);
+  return this.httpService.postService('notes/trashNotes',reqstData,true,httpHeadersOptions);
 
   }
 

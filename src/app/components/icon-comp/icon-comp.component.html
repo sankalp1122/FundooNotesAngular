@@ -23,9 +23,13 @@
         <img  class="sizeicon" src="../../../assets/smalIcons/more_vert_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
 
         </mat-icon>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
+        <mat-menu #menu="matMenu" class="menuBoxsize">
+            <button mat-menu-item (click)="DeleteNote()" >Delete note</button>
+            <button mat-menu-item>Add labels</button>
+            <button mat-menu-item>Add drawing</button>
+            <button mat-menu-item>Make a copy</button>
+            <button mat-menu-item>Show tick boxes</button>
+            <button mat-menu-item>Copy to google docs</button>
           </mat-menu>
     </div>
 </div>
