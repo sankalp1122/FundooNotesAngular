@@ -1,47 +1,16 @@
 <div class="maincontainer">
-<mat-card class="matcarddumy" *ngFor="let note of datanotearr"  (click)="openDialog(note)">
-    <mat-card-content class="matcardinside2">
-        <div class="firsttitleBox">
-            <!-- <input type="text" class="inputtitle txttitlespan" placeholder="Title"> -->
-            <span class="txttitlespan">{{note.title}}</span>
-            <mat-icon>
-                <img class="sizeicon" src="../../../assets/smalIcons/push_pin_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
+    <mat-card class="matcarddumy" *ngFor="let note of datanotearr" >
+        <mat-card-content class="matcardinside2">
+            <div class="titlendDescriptionholdr" (click)="openDialog(note)">
+            <mat-card-title class="firsttitleBox">
+                {{note.title}}
+            </mat-card-title>
 
-            </mat-icon>
+            <mat-card-title class="takenottextBox">
+                {{note.description}}
+            </mat-card-title>
         </div>
-        <div class="takenottextBox">
-            <!-- <input type="text" class="inputtitle txttitlespan" placeholder="Take a note...."> -->
-
-            <span class="textnotClasscnd"> Take a note....</span>
-        </div>
-        <div class="iconLastBox">
-            <div class="iconsBoxonlyHldr">
-                <mat-icon >
-                <img class="sizeicon" src="../../../assets/smalIcons/add_alert_FILL0_wght300_GRAD0_opsz24.svg" alt="">    
-                </mat-icon>
-                <mat-icon >
-                <img class="sizeicon" src="../../../assets/smalIcons/person_add_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
-                </mat-icon>
-                <mat-icon >
-                <img class="sizeicon" src="../../../assets/smalIcons/palette_FILL0_wght400_GRAD0_opsz20 (1).svg" alt="">    
-
-                </mat-icon>
-                <mat-icon >
-                <img class="sizeicon" src="../../../assets/smalIcons/photo_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
-                </mat-icon>
-                <mat-icon >
-                <img class="sizeicon" src="../../../assets/smalIcons/archive_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
-                </mat-icon>
-                <mat-icon >more_vert
-                <img class="sizeicon" src="../../../assets/smalIcons/more_vert_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
-                </mat-icon>
-
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
+            <app-icon-comp></app-icon-comp>
+        </mat-card-content>
+    </mat-card>
 </div>

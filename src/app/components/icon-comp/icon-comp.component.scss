@@ -1,0 +1,26 @@
+  
+  .iconLastBox {
+    width: 100%;
+    min-height: 30%;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    // padding-left: 7px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+ 
+  .iconsBoxonlyHldr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid blue;
+    font-size: 10px;
+  }
+  .sizeicon {
+    object-fit: contain;
+    height: 17px;
+    width: 17px;
+  }

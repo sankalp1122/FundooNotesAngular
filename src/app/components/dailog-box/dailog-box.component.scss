@@ -1,124 +1,102 @@
-.maincontainer {
-    // width: 100vw;
-    // height: 100vh;
-    // border: 20px solid black;
-    margin-left: 25px;
-    //   margin-right: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    justify-content: flex-start;
-    //   row-gap: 10px;
-    //   column-gap: 10px;
-    gap: 15px;
-    margin-top: 50px;
+.formclssonly{
+  width: auto;
+  height: auto;
+  overflow: hidden !important;
+}
+
+
+.pushpinclsicon {
+  object-fit: contain;
+  height: 21px;
+  width: 21px;
+  color: #202124;
+}
+
+.noteinput2Box {
+  // border: 1px solid red;
+  width: 45vw;
+  // margin-left: 327px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  // margin-top: 39px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+.matcardinside2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.firsttitleBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  // border: 1px solid red;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.inputtitle {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+
+  letter-spacing: 0.00625em;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.takenottextBox {
+  width: 100%;
+  height: 50px;
+  // border: 1px solid red;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.iconLastBox {
+  width: 100%;
+  height: 50px;
+  // border: 1px solid red;
+  display: flex;
+}
+.txttitlespan {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.iconsBoxonlyHldr {
+  width: 83%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding-left: 7px;
+}
+.sizeicon {
+  font-size: 17px;
+  // color: rgba(0    ,0,0,.2);
+}
+.closBtnBox {
+  width: 35%;
+  height: 100%;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btnTxtclas {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 2em;
+  :hover {
+    background-color: lightgray;
   }
-  .matcarddumy {
-    // margin: 30px;
-    // border: 1px solid red;
-    width: 20%;
-    max-width: 800px;
-    min-width: 250px;
-    height: 138px;
-    padding: 1;
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-evenly;
-  }
-  
-  .noteinput2Box {
-    width: 550px;
-    margin-left: 99px;
-    height: 150px;
-  }
-  .matcardinside2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .firsttitleBox {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    // border: 1px solid red;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-  }
-  .inputtitle {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-  
-    letter-spacing: 0.00625em;
-    font-family: "Google Sans", Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-  }
-  .takenottextBox {
-    width: 100%;
-    height: 30px;
-    // border: 1px solid red;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-  }
-  .iconLastBox {
-    width: 100%;
-    height: 80px;
-    // border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    // padding-top: 20px;
-    padding-left: 7px;
-    align-items: flex-start;
-  }
-  .txttitlespan {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .textnotClasscnd {
-    letter-spacing: 0.00625em;
-    font-family: "Google Sans", Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-  }
-  .iconsBoxonlyHldr {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // border: 1px solid blue;
-    font-size: 10px;
-    // margin-bottom: 10px;
-  }
-  .sizeicon {
-    object-fit: contain;
-    height: 17px;
-    width: 17px;
-    // font-size: 14px;
-    // color: rgba(0    ,0,0,.2);
-  }
-  .closBtnBox {
-    width: 35%;
-    height: 100%;
-    // border: 1px solid red;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .btnTxtclas {
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-right: 2em;
-    :hover {
-      background-color: lightgray;
-    }
-  }
-  
+}

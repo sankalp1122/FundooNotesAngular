@@ -17,7 +17,7 @@ export class NoteInputComponent implements OnInit {
   ngOnInit(): void {
     this.cardData = this.formBuilder.group({
       title: [''],
-      discription: [''],
+      description: [''],
     });
   }
 

@@ -27,6 +27,8 @@ import { DisplaynotesComponent } from './components/displaynotes/displaynotes.co
 import { DailogBoxComponent } from './components/dailog-box/dailog-box.component';
 // import {MatCardModule} from '@angular/material';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
+import { IconCompComponent } from './components/icon-comp/icon-comp.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     GetallnotesComponent,
     DisplaynotesComponent,
     DailogBoxComponent,
+    IconCompComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     FontAwesomeModule,
     // MatCardModule,
     MatDialogModule,
+    MatMenuModule
 
   ],
   providers: [],

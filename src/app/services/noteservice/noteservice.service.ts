@@ -33,4 +33,27 @@ export class NoteserviceService {
   }
     return this.httpService.postService('notes/addNotes',reqstData,true,httpHeadersOptions);
 }
+
+  deleteNote(id: any){
+    this.token=localStorage.getItem('token');
+    let httpHeadersOptions= {
+      headers: new HttpHeaders ({ 
+        ContentType: 'application/json',
+        authorization: this.token
+      })
+    }
+  return this.httpService.postService('notes/trashNotes',id,true,httpHeadersOptions);
+
+  }
+
+  updateNote(reqstData: any){
+    this.token=localStorage.getItem('token');
+    let httpHeadersOptions= {
+      headers: new HttpHeaders ({ 
+        ContentType: 'application/json',
+        authorization: this.token
+      })
+    }
+    return this.httpService.postService('notes/updateNotes',reqstData,true,httpHeadersOptions);
+  }
 }

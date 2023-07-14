@@ -22,9 +22,6 @@ notesarr:any = [];
     this.noteService.getallnotes().subscribe((res:any) => {
       console.log(res);
       this.notesarr=res.data.data;
-      // console.log(this.notesarr.data.data,"notes");
-        
-      // this.notesarr= this.notesarr.data.data;
     })
   }
 }
