@@ -33,7 +33,7 @@ const routes: Routes = [
     component: ResetPasswordComponent,
   },
   {
-    path: 'dashboard',
+    path: 'dashboard', canActivate:[AuthenticationGuard],
     component: DashboardComponent,
     children: [
       {
@@ -59,7 +59,7 @@ const routes: Routes = [
     path: 'child',
     component: ChildComponent,
   },
-  {path:'home',component:DashboardComponent,canActivate:[AuthenticationGuard]},
+  {path:'home',component:DashboardComponent,},
 ];
 
 @NgModule({

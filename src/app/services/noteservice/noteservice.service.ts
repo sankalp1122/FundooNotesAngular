@@ -127,11 +127,12 @@ export class NoteserviceService {
         authorization: this.token,
       }),
     };
-    return this.httpService.getService(
+    return this.httpService.postService(
       'notes/changesColorNotes',
+      reqstData,
       true,
       httpHeadersOptions
-    );
+      )
   }
 
 }

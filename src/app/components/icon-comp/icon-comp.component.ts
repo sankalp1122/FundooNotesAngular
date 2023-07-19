@@ -35,8 +35,10 @@ export class IconCompComponent {
   giveColor(clrData:any){
     const reqstData = {
       noteIdList: [this.noteData],
-      color: clrData.code
+      color: clrData
     }
+    console.log(reqstData,"color data it");
+    
     this.noteservice.putColor(reqstData).subscribe((res)=>{
       console.log(res);
       
