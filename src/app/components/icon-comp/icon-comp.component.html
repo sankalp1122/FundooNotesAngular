@@ -1,28 +1,29 @@
-<div class="iconLastBox">
     <div class="iconsBoxonlyHldr">
         <mat-icon >
         <img class="sizeicon" src="../../../assets/smalIcons/add_alert_FILL0_wght300_GRAD0_opsz24.svg" alt="">    
         </mat-icon>
+
         <mat-icon >
         <img class="sizeicon" src="../../../assets/smalIcons/person_add_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
         </mat-icon>
-        <mat-icon >
+
+        <mat-icon [matMenuTriggerFor]="menuColor">
         <img class="sizeicon" src="../../../assets/smalIcons/palette_FILL0_wght400_GRAD0_opsz20 (1).svg" alt="">    
-
         </mat-icon>
+
         <mat-icon >
         <img class="sizeicon" src="../../../assets/smalIcons/photo_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
         </mat-icon>
+
         <mat-icon (click)="archivenote()">
         <img class="sizeicon" src="../../../assets/smalIcons/archive_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
-
         </mat-icon>
+
         <mat-icon  [matMenuTriggerFor]="menu"> more_vert
         <img  class="sizeicon" src="../../../assets/smalIcons/more_vert_FILL0_wght400_GRAD0_opsz20.svg" alt="">    
 
         </mat-icon>
+
         <mat-menu #menu="matMenu" class="menuBoxsize">
             <button mat-menu-item (click)="DeleteNote()" >Delete note</button>
             <button mat-menu-item>Add labels</button>
@@ -31,5 +32,14 @@
             <button mat-menu-item>Show tick boxes</button>
             <button mat-menu-item>Copy to google docs</button>
           </mat-menu>
+
+
+          <mat-menu yPosition="below" #menuColor="matMenu" class="ClormenuBoxsize">
+            <div style="display: flex; width: 220px; height: 80px;">
+
+           <div class="colrHolderBox" *ngFor="let color of colorsArray "  [ngStyle]="{'background-color': color }"  (click)="giveColor(color)">
+             </div>
+        </div>
+
+          </mat-menu>
     </div>
-</div>

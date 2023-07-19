@@ -1,6 +1,7 @@
-import { CanActivateFn , ActivatedRouteSnapshot , RouterStateSnapshot , UrlTree, CanActivate } from '@angular/router';
+import { CanActivateFn , ActivatedRouteSnapshot , RouterStateSnapshot , UrlTree, CanActivate, Router } from '@angular/router';
 import {Observable} from 'rxjs'
 import { Injectable } from '@angular/core';
+import { AuthguardServiceService } from './services/authguard-service.service';
 
 
 @Injectable({
@@ -10,9 +11,15 @@ import { Injectable } from '@angular/core';
 })
 
 export class AuthenticationGuard implements CanActivate {
-  canActivate() :boolean {
-    { 
-      return true;
+  
+  constructor(private Authguardservice: AuthguardServiceService, private router: Router) {}
+  canActivate():boolean{
+    if (!this.Authguardservice.geTtoken()) {
+      console.log("Using AuthGuard");
+      
+      this.router.navigateByUrl('/login');
+      return false
     }
+    return true
   }
 };

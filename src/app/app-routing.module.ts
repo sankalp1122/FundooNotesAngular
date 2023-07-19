@@ -11,6 +11,8 @@ import { TrashcompComponent } from './components/trashcomp/trashcomp.component';
 import { ArchiveComponent } from './components/archive/archive.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import {AuthenticationGuard} from './authentication.guard';
+
 
 const routes: Routes = [
   {
@@ -57,6 +59,7 @@ const routes: Routes = [
     path: 'child',
     component: ChildComponent,
   },
+  {path:'home',component:DashboardComponent,canActivate:[AuthenticationGuard]},
 ];
 
 @NgModule({

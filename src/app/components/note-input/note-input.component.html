@@ -45,7 +45,7 @@
             alt=""
           />
         </div>
-        <div class="takenottextBox">
+        <div class="takenottextBox ">
           <input
             matInput
             formControlName="description"
@@ -55,10 +55,31 @@
           />
         </div>
         <div class="iconLastBox">
-          <app-icon-comp ></app-icon-comp>
           
-          
-          <!-- <div class="iconsBoxonlyHldr">
+          <app-icon-comp id="iconfornote" ></app-icon-comp>
+         
+          <div class="closBtnBox">
+            <span class="btnTxtclas" (click)="addingData()"> Close</span>
+          </div> 
+        
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="iconsBoxonlyHldr">
             <mat-icon class="sizeicon">
               <img
                 class="pushpinclsicon"
@@ -117,11 +138,4 @@
             </mat-icon>
           </div>
 
-          <div class="closBtnBox">
-            <span class="btnTxtclas" (click)="addingData()"> Close</span>
-          </div> -->
-        </div>
-      </mat-card-content>
-    </mat-card>
-  </form>
-</div>
+          -->

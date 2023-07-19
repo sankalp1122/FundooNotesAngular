@@ -33,6 +33,7 @@ import { ArchiveComponent } from './components/archive/archive.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { AuthguardServiceService } from './services/authguard-service.service';
+// import {AuthenticationGuard} from './authentication.guard'; 
 
 @NgModule({
   declarations: [
