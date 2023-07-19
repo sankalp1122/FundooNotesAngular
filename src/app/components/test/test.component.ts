@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import {
   EmailValidator,
   FormBuilder,
@@ -12,23 +12,6 @@ import {
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.scss'],
 })
-export class TestComponent implements OnInit {
-  data: any;
-  constructor(private formbuilder: FormBuilder) {}
-  emailData!: FormGroup;
-
-  ngOnInit(): void {
-    this.emailData = this.formbuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-    });
-  }
-
-  onsubmit() {
-    if (this.emailData.invalid) {
-      return;
-    } else {
-     console.log(this.emailData.value.email);
-     
-    }
-  }
+export class TestComponent  {
+ 
 }

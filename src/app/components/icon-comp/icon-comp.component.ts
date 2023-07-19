@@ -5,30 +5,28 @@ import { UserService } from 'src/app/services/userServices/user.service';
 @Component({
   selector: 'app-icon-comp',
   templateUrl: './icon-comp.component.html',
-  styleUrls: ['./icon-comp.component.scss']
+  styleUrls: ['./icon-comp.component.scss'],
 })
 export class IconCompComponent {
+  @Input() noteData: any;
 
-  @Input() noteData :any
+  constructor(private noteservice: NoteserviceService) {}
 
-  constructor(private noteservice:NoteserviceService) { }
+  DeleteNote() {
+    const reqstData = { noteIdList: [this.noteData], isDeleted: true };
+    console.log(reqstData);
 
-  DeleteNote(){
-
-    const reqstData = 
-    { noteIdList: [this.noteData],
-      isDeleted: true,
-     }
-     console.log(reqstData);
-     
     // console.log(this.noteData,"sankalp noteData id");
-    this.noteservice.deleteNote(reqstData).subscribe((res:any)=>{
+    this.noteservice.deleteNote(reqstData).subscribe((res: any) => {
       console.log(res);
-      
-    })
-    
+    });
   }
 
-
-
+  archivenote() {
+    const reqstData = { noteIdList: [this.noteData], isArchived: true };
+    console.log(reqstData);
+    this.noteservice.addtoArchive(reqstData).subscribe((res: any) => {
+      console.log(res);
+    });
+  }
 }

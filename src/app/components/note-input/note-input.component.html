@@ -1,118 +1,127 @@
-
-
-
-
-<mat-card class="noteinput1Box" *ngIf="!shownote">
-  <mat-card-content class="matcardinside" (click)="show()">
-    <div class="left-textbox">
-      <input
-        type="text"
-        class="inputtitle txttitlespan"
-        placeholder="Take a note...."
-      />
-    </div>
-    <div class="rghticonBox">
-      <mat-icon class="iconClor">check_circle_outline</mat-icon>
-      <mat-icon class="iconClor">
-        <img class="iconDsboarclas" src="../../../assets/brush_FILL0_wght300_GRAD0_opsz40.svg" alt="">
-      </mat-icon>
-      <mat-icon class="iconClor">
-      <img class="iconDsboarclas" src="../../../assets/image_FILL0_wght400_GRAD0_opsz40 (1).svg" alt="">
-      </mat-icon>
-    </div>
-  </mat-card-content>
-</mat-card>
-
-<form [formGroup]="cardData">
-  <mat-card class="noteinput2Box" *ngIf="shownote">
-    <mat-card-content class="matcardinside2">
-      <div class="firsttitleBox">
+<div class="takenotinputMainContnr">
+  <mat-card  class="noteinput1Box" *ngIf="!shownote">
+    <mat-card-content class="matcardinside" (click)="show()">
+      <div class="left-textbox">
         <input
-          matInput
-          formControlName="title"
-          type="text"
-          class="inputtitle txttitlespan"
-          placeholder="Title"
-        />
-        <img
-          class="pushpinclsicon"
-          src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz40.svg"
-          alt=""
-        />
-      </div>
-      <div class="takenottextBox">
-        <input
-          matInput
-          formControlName="description"
           type="text"
           class="inputtitle txttitlespan"
           placeholder="Take a note...."
         />
       </div>
-      <div class="iconLastBox">
-        <div class="iconsBoxonlyHldr">
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/add_alert_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/person_add_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/palette_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/add_photo_alternate_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/archive_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/undo_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-          <mat-icon class="sizeicon">
-            <img
-              class="pushpinclsicon"
-              src="../../../assets/redo_FILL0_wght300_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </mat-icon>
-        </div>
-
-        <div class="closBtnBox">
-          <span class="btnTxtclas" (click)="addingData()"> Close</span>
-        </div>
+      <div class="rghticonBox">
+        <mat-icon class="iconClor">check_circle_outline</mat-icon>
+        <mat-icon class="iconClor">
+          <img
+            class="iconDsboarclas"
+            src="../../../assets/brush_FILL0_wght300_GRAD0_opsz40.svg"
+            alt=""
+          />
+        </mat-icon>
+        <mat-icon class="iconClor">
+          <img
+            class="iconDsboarclas"
+            src="../../../assets/image_FILL0_wght400_GRAD0_opsz40 (1).svg"
+            alt=""
+          />
+        </mat-icon>
       </div>
     </mat-card-content>
   </mat-card>
-</form>
+
+  <form [formGroup]="cardData">
+    <mat-card class="noteinput2Box" *ngIf="shownote">
+      <mat-card-content class="matcardinside2">
+        <div class="firsttitleBox">
+          <input
+            matInput
+            formControlName="title"
+            type="text"
+            class="inputtitle txttitlespan"
+            placeholder="Title"
+          />
+          <img
+            class="pushpinclsicon"
+            src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz40.svg"
+            alt=""
+          />
+        </div>
+        <div class="takenottextBox">
+          <input
+            matInput
+            formControlName="description"
+            type="text"
+            class="inputtitle txttitlespan"
+            placeholder="Take a note...."
+          />
+        </div>
+        <div class="iconLastBox">
+          <app-icon-comp ></app-icon-comp>
+          
+          
+          <!-- <div class="iconsBoxonlyHldr">
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/add_alert_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/person_add_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/palette_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/add_photo_alternate_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/archive_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/undo_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+            <mat-icon class="sizeicon">
+              <img
+                class="pushpinclsicon"
+                src="../../../assets/redo_FILL0_wght300_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </mat-icon>
+          </div>
+
+          <div class="closBtnBox">
+            <span class="btnTxtclas" (click)="addingData()"> Close</span>
+          </div> -->
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>

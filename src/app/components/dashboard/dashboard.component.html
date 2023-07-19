@@ -24,7 +24,7 @@
       <mat-icon matTooltip="Refresh" class="icon-border">
         <img class="iconDsboarclas" src="../../../assets/refresh_FILL0_wght400_GRAD0_opsz40.svg" alt="">      
       </mat-icon>
-      <mat-icon matTooltip="List view" class="icon-border">
+      <mat-icon matTooltip="List view" class="icon-border" >
         <img class="iconDsboarclas" src="../../../assets/view_agenda_FILL0_wght400_GRAD0_opsz40.svg" alt="">
         </mat-icon
       >
@@ -60,7 +60,7 @@
     class="sidenvonlymat"
   >
     <mat-list-item class="itemlist">
-      <div class="drawerliscontainer">
+      <div class="drawerliscontainer" routerLink="notes">
         <img
           src="../../../assets/lightbulb_FILL0_wght400_GRAD0_opsz48.svg"
           class="nav-icon"
@@ -77,7 +77,7 @@
           src="../../../assets/notifications_FILL0_wght400_GRAD0_opsz48.svg"
           class="nav-icon"
           alt=""
-        />
+        />  
         <span class="nav-text">Reminders</span>
         <div class="emptyDiv"></div>
       </div>
@@ -94,7 +94,7 @@
       </div>
     </mat-list-item>
     <mat-list-item class="itemlist">
-      <div class="drawerliscontainer">
+      <div class="drawerliscontainer" routerLink="archive">
         <img
           src="../../../assets/archive_FILL0_wght400_GRAD0_opsz40.svg"
           class="nav-icon"
@@ -105,7 +105,7 @@
       </div>
     </mat-list-item>
     <mat-list-item class="itemlist">
-      <div class="drawerliscontainer">
+      <div class="drawerliscontainer" routerLink="trashComp">
         <img
           src="../../../assets/delete_FILL0_wght400_GRAD0_opsz40.svg"
           class="nav-icon"
@@ -117,7 +117,7 @@
     </mat-list-item>
   </mat-sidenav>
 
-  <mat-sidenav-content class="cardsnotesDisplaybox">
+  <mat-sidenav-content >
     <div >
       <router-outlet> </router-outlet>
     </div>

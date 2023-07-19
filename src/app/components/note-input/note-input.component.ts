@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NoteserviceService } from 'src/app/services/noteservice/noteservice.service';
 
@@ -8,6 +8,9 @@ import { NoteserviceService } from 'src/app/services/noteservice/noteservice.ser
   styleUrls: ['./note-input.component.scss'],
 })
 export class NoteInputComponent implements OnInit {
+  @Output() messageEvent = new EventEmitter<any>();
+
+
   constructor(
     private formBuilder: FormBuilder,
     private noteService: NoteserviceService
@@ -32,8 +35,10 @@ export class NoteInputComponent implements OnInit {
   addingData() {
     this.noteService.addnote(this.cardData.value).subscribe((data: any) => {
       console.log(data, 'Login // there is  data');
+      this.messageEvent.emit(data);
       // localStorage.setItem('token', data.id);
     });
     this.show();
   }
+
 }

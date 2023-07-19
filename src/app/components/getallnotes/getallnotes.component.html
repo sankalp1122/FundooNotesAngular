@@ -1,8 +1,10 @@
 <!-- <p>getallnotes works!</p> -->
 
 <div class="noteinputWrapper">
-    <app-note-input ></app-note-input>
+    <app-note-input (messageEvent)="refreshnote($event)"></app-note-input>
     <app-displaynotes [datanotearr]='notesarr'></app-displaynotes>
+    
 </div>
 
     
+        

@@ -26,4 +26,9 @@ notesarr:any = [];
     })
 
   }
+
+  refreshnote(e:any){
+    this.getallnotes();
+
+  }
 }

@@ -19,7 +19,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { TestComponent } from './components/test/test.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NoteInputComponent } from './components/note-input/note-input.component';
 import { GetallnotesComponent } from './components/getallnotes/getallnotes.component';
@@ -29,6 +28,11 @@ import { DailogBoxComponent } from './components/dailog-box/dailog-box.component
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
 import { IconCompComponent } from './components/icon-comp/icon-comp.component';
+import { TrashcompComponent } from './components/trashcomp/trashcomp.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { AuthguardServiceService } from './services/authguard-service.service';
 
 @NgModule({
   declarations: [
@@ -38,12 +42,15 @@ import { IconCompComponent } from './components/icon-comp/icon-comp.component';
     ForgetPasswordComponent,
     ResetPasswordComponent,
     DashboardComponent,
-    TestComponent,
     NoteInputComponent,
     GetallnotesComponent,
     DisplaynotesComponent,
     DailogBoxComponent,
     IconCompComponent,
+    TrashcompComponent,
+    ArchiveComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +73,9 @@ import { IconCompComponent } from './components/icon-comp/icon-comp.component';
     MatMenuModule
 
   ],
-  providers: [],
+  providers: [
+    AuthguardServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
