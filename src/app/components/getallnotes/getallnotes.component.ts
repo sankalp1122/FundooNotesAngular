@@ -20,7 +20,7 @@ notesarr:any = [];
 
   getallnotes(){
     this.noteService.getallnotes().subscribe((res:any) => {
-      console.log(res);
+      console.log(res, "sankalp here to check color");
       this.notesarr=res.data.data;
       this.notesarr=this.notesarr.filter((notes:any)=>notes.isDeleted ==false)
     })

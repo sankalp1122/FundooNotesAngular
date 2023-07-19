@@ -1,5 +1,5 @@
 <div class="maincontainer">
-    <mat-card class="matcarddumy" *ngFor="let note of datanotearr" >
+    <mat-card class="matcarddumy" *ngFor="let note of datanotearr" [ngStyle]="{'background-color': note.color }" >
         <mat-card-content class="matcardinside2">
             <div class="titlendDescriptionholdr" (click)="openDialog(note)">
             <mat-card-title class="firsttitleBox">

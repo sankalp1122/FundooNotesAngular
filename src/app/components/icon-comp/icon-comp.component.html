@@ -35,9 +35,9 @@
 
 
           <mat-menu yPosition="below" #menuColor="matMenu" class="ClormenuBoxsize">
-            <div style="display: flex; width: 220px; height: 80px;">
+            <div style="display: flex; width: fit-content; height: 50px; flex-wrap: wrap;">
 
-           <div class="colrHolderBox" *ngFor="let color of colorsArray "  [ngStyle]="{'background-color': color }"  (click)="giveColor(color)">
+           <div class="colrHolderBox" *ngFor="let color of colorsArray"  [ngStyle]="{'background-color': color }"  (click)="giveColor(color)">
              </div>
         </div>
 

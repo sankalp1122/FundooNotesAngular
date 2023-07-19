@@ -19,8 +19,8 @@
     // border: 2px solid blue;
   }
   .ClormenuBoxsize{
-    width: 400px;
-    height: 80px;
+    width: 500px !important;
+    // height: 80px;
     // border: 2px solid blue;
     padding: 10px;
     display: flex;
@@ -32,6 +32,9 @@
   .colrHolderBox{
     height: 30px;
     width: 30px;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     border-radius: 100%;
+  }
+  .mat-mdc-menu-panel.mat-mdc-menu-panel{
+    max-width: none !important;
   }

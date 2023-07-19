@@ -118,4 +118,20 @@ export class NoteserviceService {
       httpHeadersOptions
     );
   }
+
+  putColor(reqstData:any){
+    this.token = localStorage.getItem('token');
+    let httpHeadersOptions = {
+      headers: new HttpHeaders({
+        ContentType: 'application/json',
+        authorization: this.token,
+      }),
+    };
+    return this.httpService.getService(
+      'notes/changesColorNotes',
+      true,
+      httpHeadersOptions
+    );
+  }
+
 }
