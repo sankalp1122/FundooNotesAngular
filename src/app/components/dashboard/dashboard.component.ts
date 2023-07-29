@@ -18,6 +18,11 @@ export class DashboardComponent implements OnDestroy {
     
   }
 
+  search(e:any): void {
+    console.log(e.target.value);
+    
+  }
+
   ngOnDestroy(): void {
     //  this.mobileQuery.removeListener(this._mobileQueryListener);
   }

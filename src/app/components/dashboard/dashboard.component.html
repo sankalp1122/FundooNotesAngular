@@ -13,7 +13,7 @@
   </div>
   <div class="center-part">
     <mat-icon class="mat-search-icon">search</mat-icon>
-    <input class="search-nav-field" placeholder="Search" type="text" />
+    <input class="search-nav-field" placeholder="Search" type="text" (keyup)="search($event)" >
   </div>
 
   <div class="right-part">
